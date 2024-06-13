@@ -1,147 +1,121 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.container{
+.container {
   color: white;
-  background-color: #B7C4CE;
+  background-color: #b7c4ce;
 }
-.navigation{
-    padding-top: 5px;
-    display: flex;
-    width: 100%;
-    align-items: right;
-    justify-content: space-between;
-}
-.title{
-  padding-left: 100px;
-  padding-top: 8px;
+.navigation {
+  padding-top: 5px;
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
-/* .logohead{
-  transform: scale(0.25); 
-  transform-origin: 0 0;
-  padding-right: 75px;
-  margin-left: 15px;
-  animation: rotateLogo 5s linear infinite;
+.title {
+  padding-left: 100px;
+  padding-top: 10px;
+  display: flex;
+  text-decoration-line: none;
+  background-color: #b7c4ce;
+  border-width: 0px;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  font-size: large;
+  font-weight: 300;
+  color: white;
 }
-@keyframes rotateLoo{
-from {
-    transform: rotate(0deg);
-}
-to {
-    transform: rotate(360deg);
-}
-}   */
 .logohead img {
   padding-left: 5px;
-  max-width: 25%; /* Set the maximum width to 100% of its container */
-  height: auto; /* Maintain the aspect ratio */
+  max-width: 25%;
+  height: auto;
   animation: rotateLogo 5s linear infinite;
-  transform-origin: center; /* Set the rotation point to the center of the logo */
+  transform-origin: center;
   border-radius: 50%;
 }
-
 @keyframes rotateLogo {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-.arrow-open{
+.arrow-open {
   padding-left: 5px;
   transform: scale(0.75);
   width: 15px;
 }
-.arrow-open:hover{
+.arrow-open:hover {
   -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-          cursor: pointer;
-          padding-left: 5px;      
+  transform: rotate(-180deg);
+  cursor: pointer;
 }
-.title{
+.title1,
+.title2 {
   text-decoration-line: none;
-  background-color: #B7C4CE;
+  background-color: #b7c4ce;
   border-width: 0px;
   line-height: 1rem;
-  letter-spacing: 1px
-  ;font-size: large;
-  font-weight: 300;
- color: white;
-  padding-top: 10px;
-}
-.title1{
-  text-decoration-line: none;
-  background-color: #B7C4CE;
-  border-width: 0px;
-  line-height: 1rem;
-  letter-spacing: 1px ;
+  letter-spacing: 1px;
   font-size: large;
   font-weight: 300;
- color: white;
-  padding-top: 10px;
-  
-}
-.title2{
-  text-decoration-line: none;
-  background-color: #B7C4CE;
-  border-width: 0px;
-  line-height: 1rem;
-  letter-spacing: 1px
-  ;font-size: large;
-  font-weight: 300;
- color: white;
+  color: white;
   padding-top: 10px;
 }
-.item1{
+.item1 {
   float: left;
   position: relative;
 }
-.hidden1 {
-  display: none;
-  list-style: none;
-  position: absolute;
-  line-height: 1rem;
-  letter-spacing: 1px;
-  padding-top: 5px;
-
-}
-.hidden1 li a{
-  text-decoration: none;
-  display: block;
-  color: aliceblue;
-}
-
-.item1:hover .hidden1  {
-  display: block; /* Show the list when the parent item is hovered */
-}
-
+.hidden1,
 .hidden2 {
   display: none;
   list-style: none;
   position: absolute;
+  background-color: white;
   line-height: 1rem;
   letter-spacing: 1px;
   padding-top: 5px;
 }
-.hidden2 li a{
+.hidden1 li,
+.hidden2 li {
+  padding: 5px 0;
+}
+.hidden1 li a,
+.hidden2 li a {
   text-decoration: none;
   display: block;
-  color: aliceblue;
+  color: black;
 }
-
+.item1:hover .hidden1,
 .item2:hover .hidden2 {
-  display: block; /* Show the list when the parent item is hovered */
+  display: block;
 }
-
-.login-button{
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+.search-bar input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+.search-bar button {
+  background-color: #ccc;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-button {
   padding-top: 8%;
   padding: 10px;
-  margin-right: 25px; 
+  margin-right: 15px;
   padding-left: 15px;
   padding-right: 15px;
   background: rgb(170, 186, 199);
@@ -151,66 +125,60 @@ to {
   border-radius: 25px;
   cursor: pointer;
   color: whitesmoke;
-} 
-
-.login-button:hover{
-  color: black ;
-  transform: scale(1.1);
-
 }
-.intro{
+.login-button:hover {
+  color: black;
+  transform: scale(1.1);
+}
+.intro {
   margin-top: 13%;
   margin-left: 15px;
+  width: 59%;
 }
-.signup-button{
+.signup-button {
   margin-top: 10px;
   padding-top: 15px;
   padding: 15px;
   border-radius: 17px;
   border: none;
-  background-color: white ;
+  background-color: white;
   color: black;
   font-size: 15px;
   font-weight: 600;
   padding-left: 25px;
   padding-right: 25px;
 }
-.signup-button:hover{
+.signup-button:hover {
   background-color: black;
   color: aliceblue;
-
 }
-.secondpart{
+.secondpart {
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
-.intro{
-  width: 59%;
-}
-.aiintro{
+.aiintro {
   margin-bottom: 15px;
   font-weight: 600;
 }
-.aiintro2{
+.aiintro2 {
   margin-bottom: 15px;
   font-size: 45px;
 }
-.deco{
+.deco {
   width: 40%;
 }
-.container2{
+.container2 {
   padding-top: 6%;
   width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
   padding-bottom: 6%;
-
 }
-.aipower{
+.aipower {
   width: 50%;
   padding-left: 15px;
 }
-.aipower2{
+.aipower2 {
   padding-left: 20px;
   padding-top: 70px;
   font-size: 1.2rem;
@@ -219,131 +187,115 @@ to {
 .aipower3 {
   padding-bottom: 20px;
 }
-.aipower3 h2{
+.aipower3 h2 {
   font-weight: 800;
 }
-.aipower4{
+.aipower4,
+.aipower5 {
   padding-bottom: 2px;
   padding-left: 25px;
 }
-.aipower5{
-  padding-left: 25px;
-}
-.container3{
-  display: flex; 
+.container3 {
+  display: flex;
   width: 100%;
 }
-.postjobs{
+.postjobs {
   padding: 1rem;
-  padding-left: 4rem ;
+  padding-left: 4rem;
   width: 35%;
   margin-top: -2rem;
 }
-.versatile{
+.versatile {
   padding-left: 20px;
   padding-top: 3rem;
   font-size: 1.2rem;
   word-spacing: 1px;
 }
-.versatile h2{
+.versatile h2 {
   font-size: 1.8rem;
   font-weight: 800;
-
 }
-.versatile1{
+.versatile1,
+.versatile2,
+.versatile3 {
   padding-top: 1rem;
   padding-left: 1rem;
 }
-.versatile2{
-  padding-top: 1rem;
-  padding-left: 1rem;
-}
-.versatile3{
-  padding-top: 1rem;
-  padding-left: 1rem;
-}
-.moredescription{
-  color:  rgb(40, 94, 40);
+.moredescription {
+  color: rgb(40, 94, 40);
   padding-top: 2rem;
   text-align: center;
   padding-bottom: 4rem;
-
 }
-.moredescription1{
- margin: -2rem;
+.moredescription1 {
+  margin: -2rem;
   font-size: 2.5rem;
 }
-.descriptionimg{
+.descriptionimg {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 1rem;
 }
-.descriptionimg1{
+.descriptionimg1 {
   width: 65%;
 }
-.descriptionimg2{
+.descriptionimg2 {
   width: 70%;
 }
-.descriptionimg3{ 
+.descriptionimg3 {
 }
-.work{
+.work {
   text-align: center;
   padding-bottom: 5rem;
 }
-.worktoday{
+.worktoday {
   align-content: center;
-  
   font-size: 40px;
   font-weight: 800;
   padding-top: 4.5rem;
   line-height: 2rem;
-
 }
-.work p{
+.work p {
   padding-top: 1rem;
   font-size: 25px;
 }
-
-.tryit{
+.tryit {
   margin-top: 10px;
   padding-top: 20px;
   padding: 20px;
   border-radius: 20px;
   border: none;
-  background-color:  rgb(40, 94, 40);
+  background-color: rgb(40, 94, 40);
   color: white;
   font-size: 20px;
   font-weight: 800;
   padding-left: 32px;
   padding-right: 32px;
 }
-.tryit:hover{
+.tryit:hover {
   background-color: rgb(20, 68, 20);
   color: rgb(230, 234, 238);
 }
-
-
-.last-part{
+.last-part {
   height: 20rem;
   display: flex;
   background-color: rgb(0, 0, 10);
   border-top-right-radius: 5rem;
   padding-top: 3rem;
 }
-.last-logo{
+.last-logo {
   padding: 3rem;
-   margin-top: -2rem;
+  margin-top: -2rem;
 }
-.last-text{
-  
+.last-text {
   padding-left: 15%;
 }
-.last-part ul{
+.last-part ul {
   align-items: flex-start;
   list-style: none;
 }
-.last-part h3{
+.last-part h3 {
   color: white;
   display: flex;
   font-weight: 600;
@@ -359,28 +311,22 @@ to {
   letter-spacing: 1px;
   text-decoration: none;
 }
-.last-part li  :hover{
+.last-part li :hover {
   color: white;
   text-decoration: underline;
-
 }
 .attribution {
-   font-size: 11px; 
+  font-size: 11px;
   text-align: center;
-  background-color: grey ;
+  background-color: grey;
   height: 1.5rem;
   padding-top: 0.5%;
 }
-.attribution a
-{ color: hsl(228, 45%, 44%); }
-
-
-
-
-  
-   @media (max-width: 480px) {
-      .text {
-        font-size: 16px;
-      }
-    }
-
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 480px) {
+  .text {
+    font-size: 16px;
+  }
+}
