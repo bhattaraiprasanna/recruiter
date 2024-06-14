@@ -4,12 +4,86 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
     font-weight: 500;
+    background-color: black;
 }
 .navigation{
-    background-color: black;
-    height: 70px;
+    background-color: whitesmoke;
+    height: 100px;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius:8px ;
+    border-bottom-right-radius: 8px;
 }
-.logohead{
+.logohead {
+    width: 80px; /* Set the desired width */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    overflow: hidden; /* Hide any overflow */
     padding-left: 5px;
+    background-color: whitesmoke;
+}
+
+.logohead img {
+    width: 100%; /* Make the image fit the width of the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+.boxes {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding: 15px;
+    gap: 5px; /* Set gap between boxes to 5px */
+}
+
+.boxes > div {
+    background-color: whitesmoke; /* Example background color */
+    color: black; /* Example text color */
+    width: 300px; /* Increase width */
+    height: 150px; /* Increase height */
+    border-radius: 8px; /* Optional: rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Remove margin */
+}
+
+.total-resume {
+    background-color: #FF5733; /* Example background color for total-resume */
+}
+
+.resume {
+    background-color: #33C3FF; /* Example background color for resume */
+}
+
+.resume2 {
+    background-color: #75FF33; /* Example background color for resume2 */
+}
+
+.resume3 {
+    background-color: #FF33D4; /* Example background color for resume3 */
+}
+
+.inline-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-boxes .box1,
+.inline-boxes .box2 {
+    background-color: whitesmoke; /* Example background color for box1 and box2 */
+    color: white;/* Set width to 200px */
+    height: 500px; /* Set height to 200px */
+    border-radius: 8px; /* Optional: rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px; /* Add margin to create a 5px gap around each box */
     
+}
+.box1{
+    width: 59%;
+}
+.box2{
+    width: 38%;
 }

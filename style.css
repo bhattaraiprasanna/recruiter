@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .container {
   color: white;
   background-color: #b7c4ce;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .navigation {
+  display: inline;
   padding-top: 5px;
   display: flex;
   width: 100%;
@@ -76,10 +78,11 @@
   display: none;
   list-style: none;
   position: absolute;
-  background-color: white;
+  outline: none;
   line-height: 1rem;
   letter-spacing: 1px;
   padding-top: 5px;
+  background-color: none; /* Transparent background */
 }
 .hidden1 li,
 .hidden2 li {
@@ -89,29 +92,47 @@
 .hidden2 li a {
   text-decoration: none;
   display: block;
-  color: black;
+  color: white;
 }
 .item1:hover .hidden1,
 .item2:hover .hidden2 {
   display: block;
 }
+
 .search-bar {
   display: flex;
   align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 25px; /* Rounded corners */
+  overflow: hidden; /* Ensures the content fits within the rounded corners */
+  height: 50px; /* Adjust the height as needed */
 }
-.search-bar input {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 200px;
-}
-.search-bar button {
-  background-color: #ccc;
+
+.search-bar input[type="text"] {
   border: none;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  flex: 1; /* Makes the input take up the remaining space */
+  height: 100%; /* Ensures the input height matches the container */
 }
+
+.search-bar button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  height: 100%; /* Ensures the button height matches the container */
+}
+
+.search-bar button i {
+  font-size: 18px;
+}
+
+.search-bar input[type="text"]:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
 .login-button {
   padding-top: 8%;
   padding: 10px;
